@@ -13,6 +13,13 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Custom styles -->
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main2.css">
+
+	<!-- JQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- JS FILES -->
+	<script src="js/script.js"></script>
+
 </head>
 
 <body>
@@ -26,9 +33,22 @@
               <input type="text" placeholder="Buscar" class="form-control search-control" />
               <button type="submit" class="btn-icon search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
-          <div class="user">
+          <div  class="nav-link user" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="user-name">Anna</span> 
-              <i class="fa fa-user icon" aria-hidden="true"></i>
+			  <i class="fa fa-user icon" aria-hidden="true"></i>
+			  <!-- Dropdown - User Information -->
+			  <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in dropright" aria-labelledby="userDropdown">
+          
+				<a class="dropdown-item dropdown-toggle" href="#" data-toggle="modal" data-target="#logoutModal">
+					<i class="fa fa-user icon" aria-hidden="true"></i>
+					Anna
+				</a>
+	  <hr>
+				  <a class="dropdown-item dropdown-toggle" href="" data-toggle="dropdown">Ajustes de la cuenta</a>
+				  <a class="dropdown-item dropdown-toggle" href="" data-toggle="modal">Mi suscripción</a>
+				  <a class="dropdown-item" href="" data-toggle="modal">Desconectarse</a>
+				
+			  </div>
           </div>
       </div>
   </header>
