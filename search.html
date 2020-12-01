@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>UOCify</title>
+	<meta name="description" content="UOCify es lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at tincidunt lectus, non feugiat velit. Integer congue in tellus sed vulputate. Etiam non ante mi.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="favicon.ico">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/e816045c78.js" crossorigin="anonymous"></script>
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main2.css">
+
+	<!-- JQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- JS FILES -->
+	<script src="js/script.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+      <div class="header-container container-fluid">
+          <a class="btn-icon logo-btn" href="/">
+              <img class="logo logo-normal" src="images/logo.svg" alt="Logo UOCify">
+			  <img class="logo logo-icon" src="images/icon.svg" alt="Logo UOCify">
+          </a>
+          <form class="search-bar" name="formulario" id="formulario" method="GET">
+			<input type="text" placeholder="Buscar" class="form-control search-control" name="buscador" id="buscador" />
+			<button type="submit" class="btn-icon search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
+		  </form>
+          <div  class="nav-link user" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="user-name">Anna</span> 
+			  <i class="fa fa-user icon" aria-hidden="true"></i>
+			  <!-- Dropdown - User Information -->
+			  <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in dropright" aria-labelledby="userDropdown">
+          
+				<a class="dropdown-item" href="#">
+					<i class="fa fa-user icon" aria-hidden="true"></i>
+					Anna
+					<i class="fas fa-angle-right"></i>
+				</a>
+	  	<hr>
+				  <a class="dropdown-item" href=""> Ajustes de la cuenta <i class="fas fa-angle-right"></i></a> 
+				  <a class="dropdown-item " href="">Mi suscripción <i class="fas fa-angle-right"></i></a>
+				  <a class="dropdown-item" href="">Desconectarse</a>
+				
+			  </div>
+          </div>
+      </div>
+  </header>
+
+  <div class="app-container container-fluid">
+
+	  <main class="page-search">
+
+			<h1 class="main-title" id="uno">Resultados de <span id="resultado"></span></h1>
+
+			<section class="tabs">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<a class="nav-link active" id="all-tab" data-toggle="tab" href="#tabAll" role="tab" aria-controls="tabAll" aria-selected="true">Todo</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="track-tab" data-toggle="tab" href="#tabTracks" role="tab" aria-controls="tabTracks" aria-selected="false">Canciones</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="album-tab" data-toggle="tab" href="#tabAlbums" role="tab" aria-controls="tabAlbums" aria-selected="false">Álbumes</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="artist-tab" data-toggle="tab" href="#tabArtists" role="tab" aria-controls="tabArtists" aria-selected="false">Artistas</a>
+					</li>  
+				</ul>
+
+
+				<div class="tab-content" id="tabContent">
+
+					<!-- ************************************** ALL ************************************************************* -->
+
+					<div class="tab-pane fade show active" id="tabAll" role="tabpanel" aria-labelledby="all-tab">
+						<h2 class="title">Canciones <i class="fa fa-chevron-right icon" aria-hidden="true"></i></h2>
+						<table class="track-list table">
+					        <tbody>
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/let-it-be.jpg" alt="Let It Be (Remastered 2009)">
+					                </td>
+					                <td class="track-title">
+					                    Let It Be (Remastered 2009)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   Let It Be (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   03:02
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="Hey Jude (Remastered 2015)">
+					                </td>
+					                <td class="track-title">
+					                    Hey Jude (Remastered 2015)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered) 
+					                </td>
+					                <td class="track-duration">
+					                   07:05
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/abbey-road.jpg" alt="Here Comes The Sun (Remastered 2009)">
+					                </td>
+					                <td class="track-title">
+					                    Here Comes The Sun (Remastered 2009)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   Abbey Road (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   03:05
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="Day Tripper (Remastered 2015)">
+					                </td>
+					                <td class="track-title">
+					                    Day Tripper (Remastered 2015)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:49
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="Yesterday (Remastered 2015)">
+					                </td>
+					                <td class="track-title">
+					                    Yesterday (Remastered 2015)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:05
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="Help! (Remastered 2015)" >
+					                </td>
+					                <td class="track-title">
+					                    Help! (Remastered 2015)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:19
+					                </td>                                
+					            </tr>
+							</tbody>
+						</table>
+						
+						<h2 class="title">Álbumes <i class="fa fa-chevron-right icon" aria-hidden="true"></i></h2>
+						
+						<section class="album-list row">
+							<article class="album col-sm-6 col-md-4 col-lg-2">
+								<img class="album-cover" src="./images/albums/the-beatles.jpg" alt="The Beatles (Remastered)">
+								<span class="album-title">The Beatles (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-2">
+								<img class="album-cover" src="./images/albums/sgt-peppers.jpg" alt="Sgt. Pepper's Lonely Hearts Club Band (Remastered)">
+								<span class="album-title">Sgt. Pepper's Lonely Hearts Club Band (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-2">
+								<img class="album-cover" src="./images/albums/let-it-be.jpg" alt="Let It Be (Remastered)">
+								<span class="album-title">Let It Be (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-2">
+								<img class="album-cover" src="./images/albums/magical-mystery-tour.jpg" alt="Magical Mystery Tour (Remastered)">
+								<span class="album-title">Magical Mystery Tour (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-2">
+								<img class="album-cover" src="./images/albums/yellow-submarine.jpg" alt="Yellow Submarine Songtrack">
+								<span class="album-title">Yellow Submarine Songtrack</span>
+								<span class="album-artist">The Beatles</span>
+							</article>	
+
+							<article class="album col-sm-6 col-md-4 col-lg-2">
+								<img class="album-cover" src="./images/albums/please-please-me.jpg" alt="Please Please Me (Remastered)">
+								<span class="album-title">Please Please Me (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+						</section>
+
+						<h2 class="title">Artistas <i class="fa fa-chevron-right icon" aria-hidden="true"></i></h2>
+
+						<section class="artist-list row">
+							<article class="artist col-sm-6 col-md-4 col-lg-2">
+								<img class="artist-picture" src="./images/artists/the-beatles.jpg" alt="The Beatles">
+								<span class="artist-name">The Beatles</span>
+								<span class="artist-fans">5.751.832 fans</span>
+							</article>
+
+							<article class="artist col-sm-6 col-md-4 col-lg-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-recovered.jpg" alt="The Beatles Recovered Band">
+								<span class="artist-name">The Beatles Recovered Band</span>
+								<span class="artist-fans">187.118 fans</span>
+							</article>
+
+							<article class="artist col-sm-6 col-md-4 col-lg-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-tribute.jpg" alt="The Beatles Tribute">
+								<span class="artist-name">The Beatles Tribute</span>
+								<span class="artist-fans">636 fans</span>
+							</article>
+
+							<article class="artist col-sm-6 col-md-4 col-lg-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-acoustic-trio.jpg" alt="The Beatles Acoustic Trio">
+								<span class="artist-name">The Beatles Acoustic Trio</span>
+								<span class="artist-fans">525 fans</span>
+							</article>
+
+							<article class="artist col-sm-6 col-md-4 col-lg-2">
+								<img class="artist-picture" src="./images/artists/empty.jpg" alt="The Beatles Symphony Orchestra">
+								<span class="artist-name">The Beatles Symphony Orchestra</span>
+								<span class="artist-fans">708 fans</span>
+							</article>
+
+							<article class="artist col-sm-6 col-md-4 col-lg-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-revival-band.jpg" alt="The Beatles Revival Band">
+								<span class="artist-name">The Beatles Revival Band</span>
+								<span class="artist-fans">1767 fans</span>
+							</article>
+						</section>				
+					</div>
+
+					<!-- ************************************** SONGS ************************************************************* -->
+
+					<div class="tab-pane fade" id="tabTracks" role="tabpanel" aria-labelledby="track-tab">
+						<h2 class="title">292 canciones</h2>
+
+					    <table class="track-list table">
+					        <thead>
+					            <tr>
+					                <th></th>
+					                <th>Canción</th>
+					                <th>Artista</th>
+					                <th>Álbum</th>
+					                <th class="aright">D.</th>
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/let-it-be.jpg" alt="Let It Be (Remastered 2009)">
+					                </td>
+					                <td class="track-title">
+					                    Let It Be (Remastered 2009)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   Let It Be (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   03:02
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="Hey Jude (Remastered 2015)">
+					                </td>
+					                <td class="track-title">
+					                    Hey Jude (Remastered 2015)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered) 
+					                </td>
+					                <td class="track-duration">
+					                   07:05
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/abbey-road.jpg" alt="Here Comes The Sun (Remastered 2009)">
+					                </td>
+					                <td class="track-title">
+					                    Here Comes The Sun (Remastered 2009)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   Abbey Road (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   03:05
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="Day Tripper (Remastered 2015)">
+					                </td>
+					                <td class="track-title">
+					                    Day Tripper (Remastered 2015)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:49
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="Yesterday (Remastered 2015)">
+					                </td>
+					                <td class="track-title">
+					                    Yesterday (Remastered 2015)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:05
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="Help! (Remastered 2015)" >
+					                </td>
+					                <td class="track-title">
+					                    Help! (Remastered 2015)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:19
+					                </td>                                
+					            </tr>
+					            					            					            					            					            
+								<tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/rubber-soul.jpg" alt="Michelle (Remastered 2009)">
+					                </td>
+					                <td class="track-title">
+					                    Michelle (Remastered 2009)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   Rubber Soul (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:42
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/please-please-me.jpg" alt="Twist And Shout (Remastered 2009)">
+					                </td>
+					                <td class="track-title">
+					                    Twist And Shout (Remastered 2009)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   Please Please Me (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:35
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/abbey-road.jpg" alt="Come Together (Remastered 2009)">
+					                </td>
+					                <td class="track-title">
+					                    Come Together (Remastered 2009) 
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   Abbey Road (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   04:19
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/abbey-road.jpg" alt="Here Comes The Sun (2019 Mix)">
+					                </td>
+					                <td class="track-title">
+					                    Here Comes The Sun (2019 Mix) 
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   Abbey Road (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   03:05
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="I Want To Hold Your Hand (Remastered 2015)">
+					                </td>
+					                <td class="track-title">
+					                   I Want To Hold Your Hand (Remastered 2015)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:25
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="A Hard Day's Night (Remastered 2015)">
+					                </td>
+					                <td class="track-title">
+					                    A Hard Day's Night (Remastered 2015)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:32
+					                </td>                                
+					            </tr>
+
+								<tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="Eleanor Rigby (Remastered 2015)">
+					                </td>
+					                <td class="track-title">
+					                    Eleanor Rigby (Remastered 2015)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:05
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/rubber-soul.jpg" alt="In My Life (Remastered 2009)">
+					                </td>
+					                <td class="track-title">
+					                    In My Life (Remastered 2009)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   Rubber Soul (Remastered) 
+					                </td>
+					                <td class="track-duration">
+					                   02:26
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/rubber-soul.jpg" alt="Norwegian Wood (Remastered 2009)">
+					                </td>
+					                <td class="track-title">
+					                    Norwegian Wood (Remastered 2009)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   Rubber Soul (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:04
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="All You Need Is Love (Remastered 2015)">
+					                </td>
+					                <td class="track-title">
+					                    All You Need Is Love (Remastered 2015)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   03:47
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/the-beatles.jpg" alt="Blackbird (Remastered 2009)">
+					                </td>
+					                <td class="track-title">
+					                    Blackbird (Remastered 2009)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   The Beatles (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:18
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/the-beatles.jpg" alt="Julia (Remastered 2009)">
+					                </td>
+					                <td class="track-title">
+					                    Julia (Remastered 2009)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   The Beatles (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:56
+					                </td>                                
+					            </tr>
+
+								<tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/come-together.jpg" alt="Come Together (2019 Mix)">
+					                </td>
+					                <td class="track-title">
+					                    Come Together (2019 Mix)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   Come Together
+					                </td>
+					                <td class="track-duration">
+					                   04:20
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="She Loves You (Mono / Remastered)">
+					                </td>
+					                <td class="track-title">
+					                    She Loves You (Mono / Remastered)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:20
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="Love Me Do (Mono / Remastered)">
+					                </td>
+					                <td class="track-title">
+					                    Love Me Do (Mono / Remastered)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:20
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="Penny Lane (Remastered 2015)">
+					                </td>
+					                <td class="track-title">
+					                    Penny Lane (Remastered 2015)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   03:00
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/the-beatles.jpg" alt="While My Guitar Gently Weeps (Remastered 2009)">
+					                </td>
+					                <td class="track-title">
+					                    While My Guitar Gently Weeps (Remastered 2009)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   The Beatles (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   04:45
+					                </td>                                
+					            </tr>
+
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/let-it-be.jpg" alt="Don't Let Me Down (Remastered 2009)">
+					                </td>
+					                <td class="track-title">
+					                    Don't Let Me Down (Remastered 2009)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   Past Masters (Vols. 1 & 2 / Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   03:35
+					                </td>                                
+					            </tr>
+								
+					            <tr class="track">
+					                <td class="track-cover">
+					                    <img src="images/albums/1.jpg" alt="Can't Buy Me Love (Remastered 2015)">
+					                </td>
+					                <td class="track-title">
+					                    Can't Buy Me Love (Remastered 2015)
+					                </td>
+					                <td class="track-artist">
+					                   The Beatles
+					                </td>
+					                <td class="track-album">
+					                   1 (Remastered)
+					                </td>
+					                <td class="track-duration">
+					                   02:11
+					                </td>                                
+					            </tr>
+				            
+					        </tbody>
+					    </table>
+
+					</div>
+
+					<!-- ************************************** ALBUMS ************************************************************* -->
+
+					<div class="tab-pane fade" id="tabAlbums" role="tabpanel" aria-labelledby="album-tab">
+						<h2 class="title">284 álbumes</h2>
+
+						<section class="album-list row">
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/the-beatles.jpg" alt="The Beatles (Remastered)">
+								<span class="album-title">The Beatles (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/sgt-peppers.jpg" alt="Sgt. Pepper's Lonely Hearts Club Band (Remastered)">
+								<span class="album-title">Sgt. Pepper's Lonely Hearts Club Band (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/let-it-be.jpg" alt="Let It Be (Remastered)">
+								<span class="album-title">Let It Be (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/magical-mystery-tour.jpg" alt="Magical Mystery Tour (Remastered)">
+								<span class="album-title">Magical Mystery Tour (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/yellow-submarine.jpg" alt="Yellow Submarine Songtrack">
+								<span class="album-title">Yellow Submarine Songtrack</span>
+								<span class="album-artist">The Beatles</span>
+							</article>	
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/please-please-me.jpg" alt="Please Please Me (Remastered)">
+								<span class="album-title">Please Please Me (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+							
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/anthology3.jpg" alt="Anthology 3">
+								<span class="album-title">Anthology 3</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/with-the-beatles.jpg" alt="With The Beatles (Remastered)">
+								<span class="album-title">With The Beatles (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/the-beatles-1967-1970.jpg" alt="The Beatles 1967 - 1970 (Remastered)">
+								<span class="album-title">The Beatles 1967 - 1970 (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/the-beatles-1962-1966.jpg" alt="The Beatles 1962 - 1966 (Remastered)">
+								<span class="album-title">The Beatles 1962 - 1966 (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/the-beatles-2.jpg" alt="The Beatles">
+								<span class="album-title">The Beatles</span>
+								<span class="album-artist">Aleh Ferreira</span>
+							</article>	
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/yellow-submarine-1.jpg" alt="Yellow Submarine (Remastered)">
+								<span class="album-title">Yellow Submarine (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/love.jpg" alt="Love">
+								<span class="album-title">Love</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/the-beatles-white-album.jpg" alt="The Beatles (White Album / Super Deluxe)">
+								<span class="album-title">The Beatles (White Album / Super Deluxe)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/the-beatles-1.jpg" alt="The Beatles">
+								<span class="album-title">The Beatles</span>
+								<span class="album-artist">Acoustic Lounge</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/songs-of-the-beatles.jpg" alt="Songs of the Beatles">
+								<span class="album-title">Songs of the Beatles</span>
+								<span class="album-artist">Auscultate</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/the-beatles-3.jpg" alt="The Beatles">
+								<span class="album-title">The Beatles</span>
+								<span class="album-artist">James Bourne</span>
+							</article>							
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/the-beatles-classics.jpg" alt="The Beatles Classics">
+								<span class="album-title">The Beatles Classics</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/best-of.jpg" alt="Best Of The Beatles Vol.1">
+								<span class="album-title">Best Of The Beatles Vol.1</span>
+								<span class="album-artist">The Beatles Tribute</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/1.jpg" alt="1 (Remastered)">
+								<span class="album-title">1 (Remastered)</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/anthology2.jpg" alt="Anthology 2">
+								<span class="album-title">Anthology 2</span>
+								<span class="album-artist">The Beatles</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/the-beatles-nova.jpg" alt="The Beatles Nova">
+								<span class="album-title">The Beatles Nova</span>
+								<span class="album-artist">Grazyna Auguscik</span>
+							</article>
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/beatles-and-chill.jpg" alt="Beatles and Chill">
+								<span class="album-title">Beatles and Chill</span>
+								<span class="album-artist">Yoga Beats</span>
+							</article>	
+
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/blackbird.jpg" alt="Éxitos the Beatles">
+								<span class="album-title">Blackbird - The Beatles Album</span>
+								<span class="album-artist">Milos Karadaglic</span>
+							</article>																																																	
+							<article class="album col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="album-cover" src="./images/albums/glee.jpg" alt="Glee Sings The Beatles">
+								<span class="album-title">Glee Sings The Beatles</span>
+								<span class="album-artist">Glee Cast</span>
+							</article>								
+						</section>  
+
+					</div>
+
+					<!-- ************************************** ARTISTS ************************************************************* -->
+
+					<div class="tab-pane fade" id="tabArtists" role="tabpanel" aria-labelledby="artist-tab">
+						<h2 class="title">71 artistas</h2>
+						<section class="artist-list row">
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-beatles.jpg" alt="The Beatles">
+								<span class="artist-name">The Beatles</span>
+								<span class="artist-fans">5.751.832 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-recovered.jpg" alt="The Beatles Recovered Band">
+								<span class="artist-name">The Beatles Recovered Band</span>
+								<span class="artist-fans">187.118 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-tribute.jpg" alt="The Beatles Tribute">
+								<span class="artist-name">The Beatles Tribute</span>
+								<span class="artist-fans">636 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-acoustic-trio.jpg" alt="The Beatles Acoustic Trio">
+								<span class="artist-name">The Beatles Acoustic Trio</span>
+								<span class="artist-fans">525 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/empty.jpg" alt="The Beatles Symphony Orchestra">
+								<span class="artist-name">The Beatles Symphony Orchestra</span>
+								<span class="artist-fans">708 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-revival-band.jpg" alt="The Beatles Revival Band">
+								<span class="artist-name">The Beatles Revival Band</span>
+								<span class="artist-fans">1767 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-covered-1.jpg" alt="The Beatles Covered">
+								<span class="artist-name">The Beatles Covered</span>
+								<span class="artist-fans">86 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-tribute-band.jpg" alt="The Beatles Tribute Band">
+								<span class="artist-name">The Beatles Tribute Band</span>
+								<span class="artist-fans">480 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-complete.jpg" alt="The Beatles Complete On Tour">
+								<span class="artist-name">The Beatles Complete On Tour</span>
+								<span class="artist-fans">13 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-silver-beatles.jpg" alt="The Silver Beatles">
+								<span class="artist-name">The Silver Beatles</span>
+								<span class="artist-fans">288 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/empty.jpg" alt="The Beatles Recovered Band">
+								<span class="artist-name">The Beatles Recovered Band</span>
+								<span class="artist-fans">383 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/empty.jpg" alt="The Beatles Symphonic Orchestra">
+								<span class="artist-name">The Beatles Symphonic Orchestra</span>
+								<span class="artist-fans">136 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-ultimate-beatles-cover-band.jpg" alt="The Ultimate Beatles Cover">
+								<span class="artist-name">The Ultimate Beatles Cover</span>
+								<span class="artist-fans">748 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/empty.jpg" alt="Yesterday - A Tribute to The Beatles">
+								<span class="artist-name">Yesterday - A Tribute to The Beatles</span>
+								<span class="artist-fans">1676 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-revival-band-1.jpg" alt="The Beatles Revival Band">
+								<span class="artist-name">The Beatles Revival Band</span>
+								<span class="artist-fans">193 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/empty.jpg" alt="Made Famous by The Beatles">
+								<span class="artist-name">Made Famous by The Beatles</span>
+								<span class="artist-fans">93 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/beatles-fan-club.jpg" alt="Beatles Fan Club">
+								<span class="artist-name">Beatles Fan Club</span>
+								<span class="artist-fans">3583 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-bornagen-beatles.jpg" alt="The Bornagen Beatles">
+								<span class="artist-name">The Bornagen Beatles</span>
+								<span class="artist-fans">57 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-connection.jpg" alt="The Beatles Connection">
+								<span class="artist-name">The Beatles Connection</span>
+								<span class="artist-fans">377 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-interviews.jpg" alt="The Beatles interviews">
+								<span class="artist-name">The Beatles interviews</span>
+								<span class="artist-fans">751 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/tony-sheridan-and-the-beatles.jpg" alt="Tony Sherdidan & The Beatles">
+								<span class="artist-name">Tony Sherdidan & The Beatles</span>
+								<span class="artist-fans">77 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-sounds-of-the-beatles.jpg" alt="The Sounds of The Beatles">
+								<span class="artist-name">The Sounds of The Beatles</span>
+								<span class="artist-fans">13 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-new-beatles.jpg" alt="The New Beatles">
+								<span class="artist-name">The New Beatles</span>
+								<span class="artist-fans">119 fans</span>
+							</article>
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/the-beatles-with-tony-sheridan.jpg" alt="The Beatles with Tony Sheridan">
+								<span class="artist-name">The Beatles with Tony Sheridan</span>
+								<span class="artist-fans">150 fans</span>
+							</article>		
+
+							<article	class="artist col-sm-6 col-md-4 col-lg-3 col-xl-2">
+								<img class="artist-picture" src="./images/artists/empty.jpg" alt="The Beatles feat. Tony Sheridan">
+								<span class="artist-name">The Beatles feat. Tony Sheridan</span>
+								<span class="artist-fans">280 fans</span>
+							</article>																																																															
+						</section>
+					</div>
+
+				</div>
+			</section>
+
+	  </main>
+
+	</div>
+
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
+
+</body>
+</html>
