@@ -1,0 +1,13 @@
+@import "./_variables.scss";
+@import "./bootstrap/bootstrap.scss";
+@import "./_base.scss"; 
+
+// components
+@import "./_header.scss"; 
+@import "./_search_bar.scss"; 
+@import "./_album_list.scss"; 
+@import "./_artist_list.scss"; 
+@import "./_track_list.scss"; 
+
+// views
+@import "./_page_search.scss"; 

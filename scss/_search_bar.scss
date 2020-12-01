@@ -1,0 +1,15 @@
+.search-bar {
+    position: relative;
+
+    .search-control{
+        border: 0;
+        padding-left: 40px;
+    }
+
+    .search-button{
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        color: $grey;
+    }
+}

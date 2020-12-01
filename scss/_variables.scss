@@ -1,0 +1,46 @@
+// importa tipografía desde google fonts
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;600;700;900&display=swap");
+
+// asigna la tipografía por defecto
+$font-family-sans-serif: "Spartan", sans-serif;
+
+// modifica los colores por defecto
+$green: #41b883;
+$red: #e02d54;
+$blue: #2482c9;
+
+$grey: #55536b;
+$grey-label: #8f8f8f;
+$grey-medium: #aaa;
+$grey-light: #f6f7fc;
+
+$bg-color: #F7F7F8;
+$border-color: #ddd;
+$table-border-color: #e8e8e8;
+$text-color: #414141;
+$label-color: #8f8f8f;
+
+
+// BREAKPOINTS:
+$xxs: 320px;
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$xl: 1440px;
+$xxl: 1900px;
+
+// MAX SIZE:
+$max-xxs: "(max-width: 320px)";
+$max-xs: "(max-width: 480px)";
+$max-sm: "(max-width: 768px)";
+$max-md: "(max-width: 992px)";
+$max-lg: "(max-width: 1200px)";
+
+// MIN SIZE:
+$min-xs: "(min-width: 480px)";
+$min-sm: "(min-width: 768px)";
+$min-md: "(min-width: 992px)";
+$min-lg: "(min-width: 1200px)";
+$min-xl: "(min-width: 1440px)";
+$min-xxl: "(min-width: 1900px)";

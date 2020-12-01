@@ -1,0 +1,41 @@
+.page-search{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .main-title {
+        margin-bottom: 20px;
+
+        span{
+            color: $grey-label;
+        }
+    }
+
+    .tabs{
+        background: white;
+        flex: 1;
+        height: 100%;
+    }
+
+    #tabAll{
+        .title{
+            font-size: 18px;
+
+            .icon{
+                font-size: 14px;
+                margin-left: 3px;
+            }
+        }
+
+        .table{
+            margin-bottom: 30px;
+            thead{
+                display: none;
+            }
+        }
+
+        section{
+            margin-bottom: 30px;
+        }
+    }
+}

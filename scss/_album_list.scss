@@ -1,0 +1,33 @@
+.album{
+    margin-bottom: 15px;
+    line-height: 1.3em;
+    cursor: pointer;
+    
+}
+
+.album-title{
+    display: block;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;   
+    font-weight: 600;     
+}
+
+.album-artist{
+    font-size: 12px;
+}
+
+.album-cover{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    background: $grey-light;
+    border: 1px solid $border-color;
+    transition: all 0.2s linear;   
+
+    &:hover{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transform: scale(1.02);
+    }
+}
